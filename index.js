@@ -11,12 +11,17 @@ Vylepšete program tak, aby na následné stisknutí libovolné klávesy žárov
 const bulbElement = document.querySelector('.bulb');
 
 const turnBulb = () => {
+  bulbElement.classList.toggle('bulb--on');
+};
+
+/*
+const turnBulb = () => {
   if (bulbElement.classList.contains('bulb--on')) {
     bulbElement.classList.remove('bulb--on');
   } else {
     bulbElement.classList.add('bulb--on');
   }
-};
+};)*/
 
 document.addEventListener('keydown', turnBulb);
 
